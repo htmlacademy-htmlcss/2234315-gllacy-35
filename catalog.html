@@ -60,7 +60,7 @@
                 <form class="form form--search" action="https://echo.htmlacademy.ru" method="post">
                   <p class="form__field">
                     <label class="visually-hidden" for="search">Найти</label>
-                    <input class="form__input" type="text" id="search" name="search" placeholder="Поиск по сайту">
+                    <input class="form__input" type="search" id="search" name="search" placeholder="Поиск по сайту">
                   </p>
                   <button class="visually-hidden" type="submit">Найти</button>
                 </form>
@@ -175,7 +175,7 @@
         <section class="catalog-products">
           <h2 class="visually-hidden">Список товаров с фильтрами.</h2>
           <form class="catalog-filter catalog-products__catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="catalog-filter__group">
+            <fieldset class="catalog-filter__group catalog-filter__group--select">
               <legend class="catalog-filter__title">Сортировка:</legend>
               <select class="select-control">
                 <option value="popular">по популярности</option>
@@ -684,7 +684,7 @@
     </div>
     <div class="modal-container disabled">
       <div class="modal modal--feedback">
-        <button class="modal__close-button">
+        <button class="modal__close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal__content">
