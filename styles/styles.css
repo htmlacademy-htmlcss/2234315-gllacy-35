@@ -276,7 +276,7 @@ html {
   display: none;
   min-width: 138px;
   margin: 0;
-  padding: 8px 16px;
+  padding: 8px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -300,16 +300,33 @@ html {
 
 .dropdown__link {
   display: block;
-  padding: 6px 0;
+  padding: 6px 16px;
   text-decoration: none;
   color: inherit;
 }
 
 .dropdown__link--primary {
+  padding: 0 16px;
+}
+
+.dropdown__link strong {
+  display: block;
   padding: 8px 0 12px;
   margin-bottom: 4px;
-  font-weight: 700;
   border-bottom: 1px solid #b9b9b9;
+}
+
+.dropdown__link:not(.active):hover {
+  background-color: #ffcbd8;
+}
+
+.dropdown__link:not(.active):active {
+  background-color: #ff7799;
+}
+
+.dropdown__link.active {
+  color: #fcfcfc;
+  background-color: #ff4a78;
 }
 
 .nav__contacts {
